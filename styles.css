@@ -13,14 +13,20 @@ h1 {
     font-size: 3em;
 }
 
+h2 {
+    text-align: center;
+}
+
 ul {
     list-style: none;
 }
 
 nav {
     background-color: white;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
+    position: fixed;
 }
 
 .nav-list {
@@ -30,6 +36,31 @@ nav {
 
 .nav-list li {
     margin: 20px;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px black dashed;
+    transition: 0.5s;
+    
+}
+
+.nav-list li:hover{
+    background-color: black;
+    letter-spacing: 0.5rem;
+    
+}
+
+a {
+    color: black;
+
+}
+
+.nav-list a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
 }
 
 #welcome-section {
@@ -37,15 +68,48 @@ nav {
     justify-content: center;
     width: 100%;
     height: 500px;
-    background-color: gray;
+    background-image: linear-gradient(white, skyblue);
 }
 
 #projects-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(320px, 1fr));
     grid-gap: 4em;
+    padding: 5rem 2rem;
+    overflow: hidden;
 }
 
 img {
     width: 100%;
+}
+
+.project-title {
+    text-align: center;
+}
+
+p {
+    background-color: white;
+    border: 1px black dashed;
+    padding: 10% 0;
+    transition: 0.5s;
+}
+
+p:hover {
+    background-color: black;
+    letter-spacing: 0.5rem;
+}
+
+#projects-grid a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(skyblue, white);
 }
