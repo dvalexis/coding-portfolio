@@ -80,8 +80,10 @@ main {
     background-image: linear-gradient(white, skyblue);
 }
 
+
 #projects {
     padding: 15rem 1rem;
+    background-color: skyblue;
   }
 
 #projects-grid {
@@ -90,6 +92,7 @@ main {
     grid-gap: 4em;
     padding: 5rem 2rem;
     overflow: hidden;
+    
 }
 
 img {
