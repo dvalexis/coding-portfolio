@@ -154,6 +154,10 @@ p:hover {
     #projects-grid {
         grid-template-columns: 1fr;
       }
+
+    h1 {
+        text-align: center;
+    }
     
   } 
   
