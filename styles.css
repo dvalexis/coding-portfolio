@@ -80,6 +80,10 @@ main {
     background-image: linear-gradient(white, skyblue);
 }
 
+#projects {
+    padding: 15rem 1rem;
+  }
+
 #projects-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(320px, 1fr));
@@ -136,12 +140,8 @@ p:hover {
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
     
-    #projects {
-        padding: 15rem 1rem;
-      }
-    
     #projects-grid {
-        grid-template-columns: 1fr;
+        justify-content: center;
       }
   }
   
@@ -150,6 +150,10 @@ p:hover {
     html {
       font-size: 80%;
     }
+
+    #projects-grid {
+        grid-template-columns: 1fr;
+      }
     
   } 
   
