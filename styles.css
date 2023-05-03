@@ -122,7 +122,7 @@ p.project-title {
     transition: 0.5s;
 }
 
-p:hover {
+p.project-title:hover {
     background-color: black;
     letter-spacing: 0.5rem;
 }
